@@ -12,6 +12,17 @@ gulp.task('test', function(done){
 });
 
 /**
+* Travis test using firefox
+*/
+gulp.task('travis-test', function(done){
+	karma.start({
+		configFile: __dirname + '/karma.conf.js',
+		browsers: ['Firefox'],
+		singleRun: true
+	}, done);
+});
+
+/**
 * Watch for file changes and re-run tests on each changes
 */
 gulp.task('tdd', function(done){
@@ -19,5 +30,9 @@ gulp.task('tdd', function(done){
 		configFile: __dirname + '/karma.conf.js'
 	}, done);
 });
+
+/**
+* Watch only file changes
+*/
 
 gulp.task('default', ['tdd']);

@@ -11,7 +11,7 @@ LinkedList.prototype = {
 		},
 		current;
 		if(this._head === null){
-			this._head = data;
+			this._head = node;
 		} else {
 			current = this._head;
 			while(current.next){
