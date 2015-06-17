@@ -8,5 +8,11 @@ queue.prototype = {
 	},
 	dequeue: function() {
 		return queue.shift();
+	},
+	isEmpty: function() {
+		return queue.size > 0 ? false : true;
+	},
+	size: function() {
+		return queue.length;
 	}
 };

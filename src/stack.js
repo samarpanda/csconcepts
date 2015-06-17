@@ -9,5 +9,11 @@ stack.prototype = {
 	},
 	popdata: function() {
 		return stack.pop();
+	},
+	isEmpty: function() {
+		return stack.size > 0 ? false : true;
+	},
+	size: function() {
+		return stack.size;
 	}
 };
