@@ -14,6 +14,6 @@ stack.prototype = {
 		return stack.size > 0 ? false : true;
 	},
 	size: function() {
-		return stack.size;
+		return stack.length;
 	}
 };
