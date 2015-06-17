@@ -1,19 +1,24 @@
 /**
  * LIFO
  */
-var stack = [];
+function Stack(){
+	this.cards = new Array();
+}
 
-stack.prototype = {
-	pushdata: function(item) {
-		stack.push(item);
+Stack.prototype = {
+	pushData: function(item){
+		this.cards.push(item);
 	},
-	popdata: function() {
-		return stack.pop();
+	popData: function(){
+		return this.cards.pop();
+	},
+	showStackData: function(){
+		return this.cards;
 	},
 	isEmpty: function() {
-		return stack.size > 0 ? false : true;
+		return this.size > 0 ? false : true;
 	},
 	size: function() {
-		return stack.length;
+		return this.cards.length;
 	}
-};
+}
