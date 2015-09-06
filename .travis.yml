@@ -1,9 +1,13 @@
 language: node_js
 node_js:
-  - "0.10"
+- '0.10'
 before_script:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
 notifications:
   email:
-    - samar.panda84@gmail.com
+  - samar.panda84@gmail.com
+env:
+  global:
+  - secure: O/ai+BtHiRebwAsdnRVxpTMLFoWC5nWb52chTwvdOVaUz+fgsbL/2bfhh8SuRe5svhzOuxWptEg/mpnw2ajqJhZdbtOkt7mMPqvs6zWnSn4grm2Q6pktm48K/mSb5yBUzxyovXfBSM9d5ln+cMQgu+KU8yvfpi7/wRtH0/vKNtA=
+  - secure: XFgGBgV5+O2KbUAtQMoyuJKk44nXJo3fqENGaTX/uYOXeDAQf+4FHUvdl6rJSAN8UJSzabyxxKCDUetHwTlhfugqbPIf185zFnV3cdUpzIF+mU1f1iv6qOy8P8AMrVK/oMAzOvlBZnW826/y0N9iQC41bboRd55wdofYGum6Zrs=
